@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 7%;
+    border-radius: 70%;
+    margin: 1em;
+}
+
+#protech {
+    text-align: center;
+    margin-top: -3em;
+    color: rgb(19, 41, 116);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.background {
+    background-image: url(../img/Backgroundimg.jpeg);
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 1%;
+    margin: 1%;
+    font-weight: bold;
+    border-right: 2px solid black;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(19, 41, 116);
+}
+
+nav ul li a:hover {
+    color: rgb(137, 163, 185);
+}
+
+#about {
+    display: grid;
+    grid-template-areas: 
+    "about about about"
+    "h3 h3 h3"
+    "text text img ";
+    padding: 1em;
+    margin: 1em;
+}
+
+#image1 {
+    background-image: url("../img/about.jpeg");
+    width: 450px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+    box-shadow: 5px 5px 20px #154279;
+}
+
+#image1:hover {
+    background-image: url("../img/annie-spratt-QckxruozjRg-unsplash.jpg");
+    width: 450px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.img1caption {
+    font-size: 12px;
+    text-align: right;
+}
+
+.h2 {
+    grid-area: about;
+    font-family: 'Acme', sans-serif;
+}
+
+.h3 {
+    grid-area: h3;
+    margin: 1%;
+    font-weight: lighter;
+    font-family: 'Acme', sans-serif;
+}
+
+.p {
+    grid-area: text;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.figure p {
+    grid-area: img;
+}
+
+#job {
+    padding: 1em;
+    margin: 1em;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.jobpic {
+    width: 35vw;
+    display: flex;
+    border: 4px solid black;
+    box-shadow: 5px 5px 20px #154279;
+}
+
+.jobtext {
+
+    width: 55vw;
+    display: flex;
+    margin: .5em 1em;
+}
+
+#duty {
+
+    padding: 1em;
+    margin: 1em;
+}
+
+#duty > h2 {
+    padding-bottom: 1rem;
+}
+
+.table1 {
+    border: 2px solid black;
+    padding: 1%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+    border-spacing: .45vw;
+
+}
+
+.table1 th {
+    border: 2px solid black;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(180, 186, 189);
+    vertical-align: center;
+}
+
+.table1 td {
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Slabo 27px', serif;
+    background-color: rgb(212, 219, 230);
+}
+
+#essentials .h2 {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background-color: lightslategrey;
+}
+
+.table2 {
+    border: 2px solid black;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-spacing: 1rem;
+    width: 90vw;
+    text-align: center;
+    vertical-align: center;
+}
+
+.td2 {
+    width: 50%;
+    text-align: center;
+}
+
+.left-in {
+    border: 2px solid black;
+    width: 100%;
+    height: 15vh;
+    border-spacing: 1vw;
+}
+
+.right-in {
+    border: 2px solid black;
+    width: 100%;
+    height: 15vh;
+    border-spacing: 1vw;
+    white-space: normal;
+}
+
+.right-in, .left-in {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.left-in tr td, .right-in tr td {
+    border: 1px solid black;
+    text-align: center;
+    padding: .35rem;
+    font-family: 'Slabo 27px', serif;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    display: block;
+}
+
+#caption1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#caption2 {
+    text-align: right;
+    font-weight: bold;
+}
+
+#application {
+    background-color: rgb(19, 41, 116);
+    opacity: 90%;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+#application > h2 {
+    color: white;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+fieldset {
+    padding: 1rem;
+    width: 70vw;
+    margin: 1rem auto;
+    border: 2px solid white;
+}
+
+fieldset legend {
+    font-size: 24px;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    width: 15rem;
+    text-align: right;
+    vertical-align: top;
+    color: white;
+}
+
+fieldset input:not(#up), .button, select {
+    margin-left: .6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#up {
+    margin-left: .6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+textarea {
+    padding: .5rem;
+    width: 40vw;
+    height: 25vh;
+    margin-left: .5rem;
+}
+
+#mybutton {
+    margin: .8rem auto 0;
+    text-align: center;;
+}
+
+.button {
+    padding: .25em;
+}
+
+#checking {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.check {
+    margin: 0 .3rem;
+}
+
+select {
+    width: 10.32rem;
+    font-size: 10px;
+    height: 3vh;
+}
+
+.lab {
+    display: inline;
+}
+
+.line {
+    padding: 1em;
+    margin: .25em;
+}
+
+footer {
+    background-color: lightslategrey;
+    padding: 1rem;
+    margin-bottom: .8rem;
+}
+
+footer > h4 {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+#member {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+#member a {
+    text-decoration: none;
+    color: black;
+    background-color: #99b3ff;
+    border: 1px solid black;
+    padding: .2rem;
+    border-radius: 20%;
+}
+.figcap2{
+    text-align: left;
+    font-size: 10px;
+}
